@@ -1,0 +1,64 @@
+<!doctype html>
+<title>Example</title>
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  /* display: flex;
+  flex-direction: column; */
+  margin: 0;
+  height:100vh;
+  width: 100vh;
+}
+
+header {
+    background: #00B7EB;
+    text-align: center;
+    padding: 50px;
+
+}
+
+footer {
+    background: #444444;
+    text-align: center;
+    padding: 50px;
+}
+
+nav {
+    background: #FF0000;
+    text-align: center;
+    padding: 50px;
+}
+#main{
+    display: flex;
+}
+article{
+    background: #00FF00;
+    text-align: center;
+    padding: 50px;
+    flex: 1
+}
+
+aside{
+    background: #800080;
+    text-align: center;
+    padding: 50px;
+    flex: 1;
+}
+
+@media screen and (max-width: 575px) {
+  #main {
+    flex-direction: column;
+    }
+}
+</style>
+<body>
+    <header>HEADER</header>
+    <nav>HERO</nav>
+    <div id="main">
+        <article>CONTENT</article>
+        <aside>SIDEBAR</aside>
+    </div>
+    <footer>FOOTER</footer>
+</body>

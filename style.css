@@ -1,52 +1,54 @@
-* {
-  /* box-sizing: border-box;  */
-}
- body {
-    margin: 0;
-  height: 100vh;
+ html, body {
+ margin: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
-
-
+  align-items: stretch;
 }
 
 header {
     background: #00B7EB;
     text-align: center;
     padding: 50px;
-
+    flex: 1;
 }
 
 footer {
     background: #444444;
     text-align: center;
     padding: 50px;
+    flex: 1;
 }
 
 nav {
     background: #FF0000;
     text-align: center;
     padding: 50px;
+    flex: 1;
 }
+
 #main{
     display: flex;
+    align-items: stretch;
+    flex: 1;
 }
+
 article{
     background: #00FF00;
     text-align: center;
     padding: 50px;
-    flex: 1
 }
 
 aside{
     background: #800080;
     text-align: center;
     padding: 50px;
-    flex: 1;
+    align-items: stretch;
 }
 
 @media screen and (max-width: 575px) {
   #main {
     flex-direction: column;
+    align-items: stretch;
     }
 }
